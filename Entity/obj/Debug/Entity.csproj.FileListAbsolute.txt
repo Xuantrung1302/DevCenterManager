@@ -1,0 +1,6 @@
+E:\DoAnTotNghiep\QuanLyDevManager\Entity\bin\Debug\Entity.dll
+E:\DoAnTotNghiep\QuanLyDevManager\Entity\bin\Debug\Entity.pdb
+E:\DoAnTotNghiep\QuanLyDevManager\Entity\obj\Debug\Entity.csproj.AssemblyReference.cache
+E:\DoAnTotNghiep\QuanLyDevManager\Entity\obj\Debug\Entity.csproj.CoreCompileInputs.cache
+E:\DoAnTotNghiep\QuanLyDevManager\Entity\obj\Debug\Entity.dll
+E:\DoAnTotNghiep\QuanLyDevManager\Entity\obj\Debug\Entity.pdb
