@@ -34,9 +34,9 @@ namespace DevEduManager.Screens
 
         private void frmQuanLyHocVien_Load(object sender, EventArgs e)
         {
-            Common.LoadComboBoxLoaiHV(cboLoaiHV);
-            LoadDataToGridView();
-            cboLoaiHV.SelectedIndexChanged += new EventHandler(cboLoaiHV_SelectedIndexChanged);
+            //Common.LoadComboBoxLoaiHV(cboLoaiHV);
+            //LoadDataToGridView();
+            //cboLoaiHV.SelectedIndexChanged += new EventHandler(cboLoaiHV_SelectedIndexChanged);
         }
 
         private async void LoadDataToGridView(string maHV = null, string tenHV = null, string gioiTinhHV = null, DateTime? dateStart = null, DateTime? dateEnd = null, string maLoaiHV = null)

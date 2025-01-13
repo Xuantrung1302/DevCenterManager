@@ -52,7 +52,7 @@ namespace DevEduManager.Screens
         #endregion
         private void frmTiepNhanHocVien_Load(object sender, EventArgs e)
         {
-            LoadDataToGridView();
+            //LoadDataToGridView();
         }
 
         private async void LoadDataToGridView()

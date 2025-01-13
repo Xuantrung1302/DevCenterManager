@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
@@ -193,7 +193,7 @@
             // btnHuyBo
             // 
             this.btnHuyBo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnHuyBo.BackColor = System.Drawing.Color.Silver;
+            this.btnHuyBo.BackColor = System.Drawing.Color.Gray;
             this.btnHuyBo.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnHuyBo.FlatAppearance.BorderSize = 0;
             this.btnHuyBo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
@@ -213,7 +213,7 @@
             // btnLuuThongTin
             // 
             this.btnLuuThongTin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuuThongTin.BackColor = System.Drawing.Color.Silver;
+            this.btnLuuThongTin.BackColor = System.Drawing.Color.Gray;
             this.btnLuuThongTin.FlatAppearance.BorderSize = 0;
             this.btnLuuThongTin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnLuuThongTin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -473,8 +473,8 @@
             // clmMaHV
             // 
             this.clmMaHV.DataPropertyName = "MaHV";
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
-            this.clmMaHV.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            this.clmMaHV.DefaultCellStyle = dataGridViewCellStyle1;
             this.clmMaHV.HeaderText = "Mã học viên";
             this.clmMaHV.Name = "clmMaHV";
             // 
@@ -540,7 +540,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.Silver;
+            this.btnXoa.BackColor = System.Drawing.Color.Gray;
             this.btnXoa.FlatAppearance.BorderSize = 0;
             this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -558,7 +558,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.Silver;
+            this.btnSua.BackColor = System.Drawing.Color.Gray;
             this.btnSua.FlatAppearance.BorderSize = 0;
             this.btnSua.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnSua.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -576,7 +576,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.Silver;
+            this.btnThem.BackColor = System.Drawing.Color.Gray;
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));

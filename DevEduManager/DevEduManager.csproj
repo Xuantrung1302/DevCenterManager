@@ -114,6 +114,12 @@
     <Compile Include="Modals\frmDoiMatKhau.Designer.cs">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modals\frmDonTuEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\frmDonTuEdit.Designer.cs">
+      <DependentUpon>frmDonTuEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modals\frmGiangVienEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,12 @@
     </Compile>
     <Compile Include="Modals\frmNhanVienEdit.Designer.cs">
       <DependentUpon>frmNhanVienEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modals\frmQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modals\frmQuyDinh.Designer.cs">
+      <DependentUpon>frmQuyDinh.cs</DependentUpon>
     </Compile>
     <Compile Include="Modals\frmThayDoiThongTinGV.cs">
       <SubType>Form</SubType>
@@ -170,17 +182,65 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Screens\frmBangDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmBangDiem.Designer.cs">
+      <DependentUpon>frmBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmBaoCaoHocVienTheoThang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmBaoCaoHocVienTheoThang.Designer.cs">
+      <DependentUpon>frmBaoCaoHocVienTheoThang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmCacLopDaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmCacLopDaHoc.Designer.cs">
+      <DependentUpon>frmCacLopDaHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\frmDonTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmDonTu.Designer.cs">
+      <DependentUpon>frmDonTu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmLapPhieuGhiDanh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmLapPhieuGhiDanh.Designer.cs">
+      <DependentUpon>frmLapPhieuGhiDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyDiem.Designer.cs">
+      <DependentUpon>frmQuanLyDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyDonTu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyDonTu.Designer.cs">
+      <DependentUpon>frmQuanLyDonTu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\frmQuanLyGiangVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\frmQuanLyGiangVien.Designer.cs">
       <DependentUpon>frmQuanLyGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyHocPhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyHocPhi.Designer.cs">
+      <DependentUpon>frmQuanLyHocPhi.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\frmQuanLyHocVien.cs">
       <SubType>Form</SubType>
@@ -206,17 +266,53 @@
     <Compile Include="Screens\frmQuanLyNhanVien.Designer.cs">
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\frmQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmThongKeDiemTheoLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmThongKeDiemTheoLop.Designer.cs">
+      <DependentUpon>frmThongKeDiemTheoLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmThongKeNoHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmThongKeNoHocVien.Designer.cs">
+      <DependentUpon>frmThongKeNoHocVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\frmTiepNhanHocVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\frmTiepNhanHocVien.Designer.cs">
       <DependentUpon>frmTiepNhanHocVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\frmTinNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmTinNhan.Designer.cs">
+      <DependentUpon>frmTinNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\frmTrangMoDau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\frmTrangMoDau.Designer.cs">
       <DependentUpon>frmTrangMoDau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmXemCacLopDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmXemCacLopDay.Designer.cs">
+      <DependentUpon>frmXemCacLopDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\frmXepLop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\frmXepLop.Designer.cs">
+      <DependentUpon>frmXepLop.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -226,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modals\frmDoiMatKhau.resx">
       <DependentUpon>frmDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\frmDonTuEdit.resx">
+      <DependentUpon>frmDonTuEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modals\frmGiangVienEdit.resx">
       <DependentUpon>frmGiangVienEdit.cs</DependentUpon>
@@ -238,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modals\frmNhanVienEdit.resx">
       <DependentUpon>frmNhanVienEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modals\frmQuyDinh.resx">
+      <DependentUpon>frmQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modals\frmThayDoiThongTinGV.resx">
       <DependentUpon>frmThayDoiThongTinGV.cs</DependentUpon>
@@ -264,11 +366,32 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\frmBangDiem.resx">
+      <DependentUpon>frmBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmBaoCaoHocVienTheoThang.resx">
+      <DependentUpon>frmBaoCaoHocVienTheoThang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmCacLopDaHoc.resx">
+      <DependentUpon>frmCacLopDaHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmDonTu.resx">
+      <DependentUpon>frmDonTu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmLapPhieuGhiDanh.resx">
+      <DependentUpon>frmLapPhieuGhiDanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmQuanLyDiem.resx">
+      <DependentUpon>frmQuanLyDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmQuanLyGiangVien.resx">
       <DependentUpon>frmQuanLyGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmQuanLyHocPhi.resx">
+      <DependentUpon>frmQuanLyHocPhi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmQuanLyHocVien.resx">
       <DependentUpon>frmQuanLyHocVien.cs</DependentUpon>
@@ -282,11 +405,29 @@
     <EmbeddedResource Include="Screens\frmQuanLyNhanVien.resx">
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmQuanLyTaiKhoan.resx">
+      <DependentUpon>frmQuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmThongKeDiemTheoLop.resx">
+      <DependentUpon>frmThongKeDiemTheoLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmThongKeNoHocVien.resx">
+      <DependentUpon>frmThongKeNoHocVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmTiepNhanHocVien.resx">
       <DependentUpon>frmTiepNhanHocVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmTinNhan.resx">
+      <DependentUpon>frmTinNhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\frmTrangMoDau.resx">
       <DependentUpon>frmTrangMoDau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmXemCacLopDay.resx">
+      <DependentUpon>frmXemCacLopDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\frmXepLop.resx">
+      <DependentUpon>frmXepLop.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -344,11 +485,18 @@
     <Content Include="Resources\icon_TrungTam_64dp.png" />
     <Content Include="Resources\icon_XemDiem_32dp.png" />
     <Content Include="Resources\icon_XepLop_32dp.png" />
+    <None Include="Resources\ID.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\Logo_Login_ASPro.png" />
+    <None Include="Resources\LoGo2.png" />
+    <None Include="Resources\Logo2_1.png" />
     <Content Include="Resources\preview_16x16.png" />
     <Content Include="Resources\print_16x16.png" />
     <Content Include="Resources\refresh2_16x16.png" />
     <Content Include="Resources\refresh_16x16.png" />
     <Content Include="Resources\remove_16x16.png" />
+    <None Include="Resources\result_Logo2_1.png" />
+    <None Include="Resources\resize_image_1790867358fc3de3b52d708aeb010a20_67764076efad1.png" />
     <Content Include="Resources\save_16x16.png" />
     <Content Include="Resources\show_16x16.png" />
     <Content Include="Resources\zoom_16x16.png" />

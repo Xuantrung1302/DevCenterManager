@@ -53,6 +53,10 @@ namespace DevEduManager.Screens
 
             lblNotification.Text = string.Empty;
         }
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtMatKhau.UseSystemPasswordChar = !checkBox1.Checked;
+        }
 
         private void chkSave_CheckedChanged_1(object sender, EventArgs e)
         {
@@ -92,8 +96,8 @@ namespace DevEduManager.Screens
             }
         }
 
-        #endregion
 
+        #endregion
 
     }
 }

@@ -39,16 +39,16 @@ namespace DevEduManager
         /// </summary>
         private void ResetColorTabTitle()
         {
-            btnNhanVienTitle.BackColor = Color.White;
-            btnGiangVienTitle.BackColor = Color.White;
-            btnHocVienTitle.BackColor = Color.White;
-            btnQuanTriTitle.BackColor = Color.White;
-            btnTroGiupTitle.BackColor = Color.White;
+            //btnNhanVienTitle.BackColor = Color.White;
+            //btnGiangVienTitle.BackColor = Color.White;
+            //btnHocVienTitle.BackColor = Color.White;
+            //btnQuanTriTitle.BackColor = Color.White;
+            //btnTroGiupTitle.BackColor = Color.White;
         }
 
         private void btnNhanVienTitle_Click(object sender, EventArgs e)
         {
-            tabRibbon.SelectedTab = tabRibbon.TabPages["tabNhanVien"];
+            //tabRibbon.SelectedTab = tabRibbon.TabPages["tabNhanVien"];
 
             ResetColorTabTitle();
             ((Button)sender).BackColor = Color.FromArgb(233, 233, 233);
@@ -56,7 +56,7 @@ namespace DevEduManager
 
         private void btnGiangVienTitle_Click_1(object sender, EventArgs e)
         {
-            tabRibbon.SelectedTab = tabRibbon.TabPages["tabGiangVien"];
+            //tabRibbon.SelectedTab = tabRibbon.TabPages["tabGiangVien"];
 
             ResetColorTabTitle();
             ((Button)sender).BackColor = Color.FromArgb(233, 233, 233);
@@ -64,7 +64,7 @@ namespace DevEduManager
 
         private void btnHocVienTitle_Click_1(object sender, EventArgs e)
         {
-            tabRibbon.SelectedTab = tabRibbon.TabPages["tabHocVien"];
+            //tabRibbon.SelectedTab = tabRibbon.TabPages["tabHocVien"];
 
             ResetColorTabTitle();
             ((Button)sender).BackColor = Color.FromArgb(233, 233, 233);
@@ -99,15 +99,15 @@ namespace DevEduManager
 
         private void btnQuanTriTitle_Click_1(object sender, EventArgs e)
         {
-            tabRibbon.SelectedTab = tabRibbon.TabPages["tabQuanTri"];
+            //tabRibbon.SelectedTab = tabRibbon.TabPages["tabQuanTri"];
 
             ResetColorTabTitle();
             ((Button)sender).BackColor = Color.FromArgb(233, 233, 233);
         }
-        
+
         private void btnTroGiupTitle_Click_1(object sender, EventArgs e)
         {
-            tabRibbon.SelectedTab = tabRibbon.TabPages["tabTroGiup"];
+            //tabRibbon.SelectedTab = tabRibbon.TabPages["tabTroGiup"];
 
             ResetColorTabTitle();
             ((Button)sender).BackColor = Color.FromArgb(233, 233, 233);
@@ -124,33 +124,37 @@ namespace DevEduManager
 
         private void btnTrangMoDau_Click(object sender, EventArgs e)
         {
-            pnlWorkspace.Controls.Clear();
-
-            // Kiểm tra cột nào không null và lấy giá trị của cột đó
-            string tenNguoiDung = string.Empty;
-
-            if (receivedData.Rows[0]["TenNV"] != DBNull.Value)
+            // Kiểm tra nếu pnlWorkspace không có form hoặc form hiện tại không phải là frmTrangMoDau
+            if (pnlWorkspace.Controls.Count == 0 || !(pnlWorkspace.Controls[0] is frmTrangMoDau))
             {
-                tenNguoiDung = receivedData.Rows[0]["TenNV"].ToString();
+                pnlWorkspace.Controls.Clear();
+
+                // Kiểm tra cột nào không null và lấy giá trị của cột đó
+                string tenNguoiDung = string.Empty;
+
+                //if (receivedData.Rows[0]["TenNV"] != DBNull.Value)
+                //{
+                //    tenNguoiDung = receivedData.Rows[0]["TenNV"].ToString();
+                //}
+                //else if (receivedData.Rows[0]["TenHV"] != DBNull.Value)
+                //{
+                //    tenNguoiDung = receivedData.Rows[0]["TenHV"].ToString();
+                //}
+                //else if (receivedData.Rows[0]["TenGV"] != DBNull.Value)
+                //{
+                //    tenNguoiDung = receivedData.Rows[0]["TenGV"].ToString();
+                //}
+
+                // Truyền giá trị đã xác định sang form frmTrangMoDau
+                frmTrangMoDau frm = new frmTrangMoDau(tenNguoiDung)
+                {
+                    Dock = DockStyle.Fill,
+                    TopLevel = false
+                };
+
+                pnlWorkspace.Controls.Add(frm);
+                frm.Show();
             }
-            else if (receivedData.Rows[0]["TenHV"] != DBNull.Value)
-            {
-                tenNguoiDung = receivedData.Rows[0]["TenHV"].ToString();
-            }
-            else if (receivedData.Rows[0]["TenGV"] != DBNull.Value)
-            {
-                tenNguoiDung = receivedData.Rows[0]["TenGV"].ToString();
-            }
-
-            // Truyền giá trị đã xác định sang form frmTrangMoDau
-            frmTrangMoDau frm = new frmTrangMoDau(tenNguoiDung)
-            {
-                Dock = DockStyle.Fill,
-                TopLevel = false
-            };
-
-            pnlWorkspace.Controls.Add(frm);
-            frm.Show();
         }
 
         private void btnThayDoiThongTinNV_Click(object sender, EventArgs e)
@@ -201,35 +205,38 @@ namespace DevEduManager
         {
             pnlWorkspace.Controls.Clear();
 
-            frmQuanLyNhanVien frm = new frmQuanLyNhanVien()
+            if (GlobalPages.QuanLyNhanVien == null)
             {
-                Dock = DockStyle.Fill,
-                TopLevel = false
-            };
+                frmQuanLyNhanVien frm = new frmQuanLyNhanVien()
+                {
+                    Dock = DockStyle.Fill,
+                    TopLevel = false
+                };
 
-            pnlWorkspace.Controls.Add(frm);
-            frm.Show();
+                pnlWorkspace.Controls.Add(frm);
+                frm.Show();
+            }
         }
         private void btnQuanLyHocVien_Click(object sender, EventArgs e)
         {
             pnlWorkspace.Controls.Clear();
-
-            frmQuanLyHocVien frm = new frmQuanLyHocVien()
+            if (GlobalPages.QuanLyHocVien == null)
             {
-                Dock = DockStyle.Fill,
-                TopLevel = false
-            };
+                frmQuanLyHocVien frm = new frmQuanLyHocVien()
+                {
+                    Dock = DockStyle.Fill,
+                    TopLevel = false
+                };
 
-            pnlWorkspace.Controls.Add(frm);
-            frm.Show();
+                pnlWorkspace.Controls.Add(frm);
+                frm.Show();
+            }
         }
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             this.Hide();
             DangNhap();
         }
-
-
 
         private void btnKetNoiCSDL_Click(object sender, EventArgs e)
         {
@@ -282,30 +289,30 @@ namespace DevEduManager
         /// </summary>
         public void ResetRibbonControlStatus()
         {
-            btnQuanTriTitle.Visible = true;
-            btnNhanVienTitle.Visible = true;
-            btnHocVienTitle.Visible = true;
-            btnGiangVienTitle.Visible = true;
-            btnTroGiup.Visible = true;
+            //btnQuanTriTitle.Visible = true;
+            //btnNhanVienTitle.Visible = true;
+            //btnHocVienTitle.Visible = true;
+            //btnGiangVienTitle.Visible = true;
+            //btnTroGiup.Visible = true;
 
-            btnTiepNhanHocVien.Enabled = true;
-            btnLapPhieuGhiDanh.Enabled = true;
-            btnBaoCaoHocVienTheoThang.Enabled = true;
-            btnThongKeNoHocVien.Enabled = true;
-            btnThongKeDiemTheoLop.Enabled = true;
-            btnQuanLyDiem.Enabled = true;
-            btnXepLop.Enabled = true;
-            btnQuanLyHocVien.Enabled = true;
-            btnQuanLyNhanVien.Enabled = true;
-            btnQuanLyGiangVien.Enabled = true;
-            btnQuanLyLopHoc.Enabled = true;
-            btnQuanLyKhoaHoc.Enabled = true;
-            btnQuanLyHocPhi.Enabled = true;
-            btnQuanLyTaiKhoan.Enabled = true;
-            btnThayDoiQuyDinh.Enabled = true;
-            btnKetNoiCSDL.Enabled = true;
-            btnQuanLyTaiKhoan.Enabled = true;
-            btnThongTinTrungTam.Enabled = true;
+            //btnTiepNhanHocVien.Enabled = true;
+            //btnLapPhieuGhiDanh.Enabled = true;
+            //btnBaoCaoHocVienTheoThang.Enabled = true;
+            //btnThongKeNoHocVien.Enabled = true;
+            //btnThongKeDiemTheoLop.Enabled = true;
+            //btnQuanLyDiem.Enabled = true;
+            //btnXepLop.Enabled = true;
+            //btnQuanLyHocVien.Enabled = true;
+            //btnQuanLyNhanVien.Enabled = true;
+            //btnQuanLyGiangVien.Enabled = true;
+            //btnQuanLyLopHoc.Enabled = true;
+            //btnQuanLyKhoaHoc.Enabled = true;
+            //btnQuanLyHocPhi.Enabled = true;
+            //btnQuanLyTaiKhoan.Enabled = true;
+            //btnThayDoiQuyDinh.Enabled = true;
+            //btnKetNoiCSDL.Enabled = true;
+            //btnQuanLyTaiKhoan.Enabled = true;
+            //btnThongTinTrungTam.Enabled = true;
         }
 
         #endregion
@@ -334,7 +341,7 @@ namespace DevEduManager
             }
             catch (Exception ex)
             {
-               Reconnect();
+                Reconnect();
             }
         }
 
@@ -453,7 +460,7 @@ namespace DevEduManager
             //lblUserName.Text = GlobalSettings.UserName;
 
             PhanQuyen(maLoaiNV, maLoaiHV);
-            pnlWorkspace.Controls.Clear();
+            //pnlWorkspace.Controls.Clear();
 
             //if (GlobalSettings.UserType == UserType.NhanVien)
             //    GlobalPages.LoadEssentialPages();
@@ -467,11 +474,72 @@ namespace DevEduManager
 
         #endregion
 
+
+
         private void frmMain_Load(object sender, EventArgs e)
         {
             DangNhap();
         }
 
+        private void btnQuanLyHocPhi_Click(object sender, EventArgs e)
+        {
+            pnlWorkspace.Controls.Clear();
 
+            frmQuanLyHocPhi frm = new frmQuanLyHocPhi()
+            {
+                Dock = DockStyle.Fill,
+                TopLevel = false
+            };
+
+            pnlWorkspace.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void btnQuanLyTaiKhoan_Click(object sender, EventArgs e)
+        {
+            pnlWorkspace.Controls.Clear();
+
+            frmQuanLyTaiKhoan frm = new frmQuanLyTaiKhoan()
+            {
+                Dock = DockStyle.Fill,
+                TopLevel = false
+            };
+
+            pnlWorkspace.Controls.Add(frm);
+            frm.Show();
+        }
+
+        private void btnThayDoiQuyDinh_Click(object sender, EventArgs e)
+        {
+            frmQuyDinh frm = new frmQuyDinh();
+            frm.ShowDialog();
+        }
+
+        private void btnThongTinTrungTam_Click(object sender, EventArgs e)
+        {
+            frmThongTinTrungTam frm = new frmThongTinTrungTam();
+            frm.ShowDialog();
+        }
+
+        private void pmniAS_D_VP_Click(object sender, EventArgs e)
+        {
+            if (pnlWorkspace.Controls.Count == 0 || !(pnlWorkspace.Controls[0] is frmTinNhan))
+            {
+                pnlWorkspace.Controls.Clear();
+                frmTinNhan frm = new frmTinNhan()
+                {
+                    Dock = DockStyle.Fill,
+                    TopLevel = false
+                };
+
+                pnlWorkspace.Controls.Add(frm);
+                frm.Show();
+            }
+        }
+
+        private void pmniDW_DonTu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

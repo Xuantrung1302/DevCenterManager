@@ -473,6 +473,56 @@ namespace DevEduManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ID {
+            get {
+                object obj = ResourceManager.GetObject("ID", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Login_ASPro {
+            get {
+                object obj = ResourceManager.GetObject("Logo_Login_ASPro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LoGo2 {
+            get {
+                object obj = ResourceManager.GetObject("LoGo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo2_1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo2_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap password {
+            get {
+                object obj = ResourceManager.GetObject("password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap preview_16x16 {
             get {
                 object obj = ResourceManager.GetObject("preview_16x16", resourceCulture);
@@ -516,6 +566,26 @@ namespace DevEduManager.Properties {
         internal static System.Drawing.Bitmap remove_16x16 {
             get {
                 object obj = ResourceManager.GetObject("remove_16x16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap resize_image_1790867358fc3de3b52d708aeb010a20_67764076efad1 {
+            get {
+                object obj = ResourceManager.GetObject("resize_image_1790867358fc3de3b52d708aeb010a20_67764076efad1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap result_Logo2_1 {
+            get {
+                object obj = ResourceManager.GetObject("result_Logo2_1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
